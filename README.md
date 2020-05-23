@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/abal0011/DevOps_Microservices.svg?style=svg&circle-token=fe530da34ade1ac3712cb8993bc8ac08fe627328)](https://app.circleci.com/pipelines/github/abal0011/DevOps_Microservices)
 
 ## Project Overview
 
