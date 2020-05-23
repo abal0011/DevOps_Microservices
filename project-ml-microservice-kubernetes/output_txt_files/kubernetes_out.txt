@@ -1,1 +1,25 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) ubuntu:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+pod/aravind-devops-proj created
+NAME                  READY   STATUS    RESTARTS   AGE
+aravind-devops-proj   0/1     Pending   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ubuntu:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ kubectl get pod
+NAME                  READY   STATUS    RESTARTS   AGE
+aravind-devops-proj   1/1     Running   0          97s
+(.devops) ubuntu:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "aravind-devops-proj" already exists
+NAME                  READY   STATUS    RESTARTS   AGE
+aravind-devops-proj   1/1     Running   0          115s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+ubuntu:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
