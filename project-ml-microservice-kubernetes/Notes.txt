@@ -1,0 +1,11 @@
+The following are the notes to successfully run this project from AWS Cloud9 
+
+Create git account - Got it already 
+Create Docker Hub Account - Got it 
+Create Circle CI - Got it
+
+Download hadolint using brew - Follow hadolint's github doco
+Minimum t3.micro for AWS cloud9 setup and 40 GB Volume which I updated in the middle. 
+
+Used the following docs to refer and setup minikube and kubectl 
+https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/
